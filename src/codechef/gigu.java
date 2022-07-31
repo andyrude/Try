@@ -15,7 +15,7 @@ public class gigu {
         long tax2 = 0;
         long tax3 = 0;
         if( income <= 250000){
-            return income;
+            return 0;
         } else if ( income <= 500000) {
             tax1 = 5 * income/100;
         } else if ( income <= 750000) {
