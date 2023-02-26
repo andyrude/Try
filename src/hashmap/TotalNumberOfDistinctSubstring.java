@@ -26,7 +26,7 @@ public class TotalNumberOfDistinctSubstring {
                 release += 1;
             }
             map.put(str.charAt( acq), 1);
-            answer = answer + acq - release + 1;
+            answer +=  acq - release + 1;
         }
         return answer;
     }
