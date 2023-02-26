@@ -1,3 +1,5 @@
+package codechef;
+
 public class ReturningIndex {
     public static void main(String[] args) {
         int[] nums = { 2, 7, 11, 5};
