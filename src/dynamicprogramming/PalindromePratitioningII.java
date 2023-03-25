@@ -29,12 +29,14 @@ public class PalindromePratitioningII {
 
         int min = Integer.MAX_VALUE;
         for( int i = start; i < str.length(); i++){
-            if( isPalindrome( str.substring( i + 1))){
+
+            if( isPalindrome( str.substring( start, i + 1))){
                 int m = getVal( i + 1, end, map, str) + 1;
                 min = Math.min( min, m);
                 map.put( st, min);
             }
         }
+
         return min;
     }
 
